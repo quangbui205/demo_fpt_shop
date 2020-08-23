@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d73a3ce6-689d-4923-bc99-7b9a6bd76dc9" name="Default Changelist" comment="" />
+    <list default="true" id="d73a3ce6-689d-4923-bc99-7b9a6bd76dc9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -117,6 +123,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1gUhQsbJXBKSnwjgkJwMk4zbC27" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -124,8 +131,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo_blog_laravel" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/home" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -141,11 +153,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598175065685</updated>
-      <workItem from="1598175066836" duration="1185000" />
+      <workItem from="1598175066836" duration="4444000" />
+      <workItem from="1598185778901" duration="3903000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="597" y="320" width="716" height="412" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598179087084">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="597" y="320" width="716" height="412" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1046@0.0.1920.1046" timestamp="1598179087084" />
+    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl" timestamp="1598189904641">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl/0.0.1920.1046@0.0.1920.1046" timestamp="1598189904641" />
+    <state x="755" y="445" width="399" height="161" key="NewPhpFileDialog" timestamp="1598179998501">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="755" y="445" width="399" height="161" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1598179998501" />
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598178827650">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1046@0.0.1920.1046" timestamp="1598178827650" />
   </component>
 </project>
