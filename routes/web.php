@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('mainHome');
-});
+Route::get('/', 'HomeController@mainHome')->name('home.mainHome');
 Route::get('/check', function () {
     return view('checkout');
 });

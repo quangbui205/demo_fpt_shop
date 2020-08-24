@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Services\ProductService;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    protected $productService;
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(ProductService $productService)
     {
+        $this->productService = $productService;
         $this->middleware('auth');
     }
 
@@ -24,5 +27,11 @@ class HomeController extends Controller
     public function index()
     {
         return view('admin');
+    }
+
+    public function mainHome()
+    {
+        $products = $this->productService->getAll();
+        return view('mainHome',compact('products'));
     }
 }
