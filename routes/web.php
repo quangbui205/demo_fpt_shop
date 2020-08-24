@@ -14,9 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('mainHome');
 });
 Route::get('/check', function () {
     return view('checkout');
 });
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::middleware('auth')->prefix('admin')->group(function (){
+    Route::get('/',function (){
+        return view('admin');
+    });
+});
+
+Auth::routes();
+
+
+
 
