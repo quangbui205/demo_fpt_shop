@@ -25,8 +25,14 @@ Route::get('/welcome', function () {
 });
 
 Route::middleware('auth')->prefix('admin')->group(function (){
-    Route::get('/',function (){
-        return view('admin');
+    Route::get('/','HomeController@index')->name('admin.home');
+    Route::prefix('product')->group(function (){
+        Route::get('/','ProductController@index')->name('product.list');
+        Route::get('/create','ProductController@create')->name('product.create');
+        Route::post('/store','ProductController@store')->name('product.store');
+        Route::get('/{id}/edit','ProductController@edit')->name('product.edit');
+        Route::post('/{id}/update','ProductController@update')->name('product.update');
+        Route::get('/{id}/delete','ProductController@delete')->name('product.delete');
     });
 });
 

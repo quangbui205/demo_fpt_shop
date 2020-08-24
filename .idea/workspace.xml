@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d73a3ce6-689d-4923-bc99-7b9a6bd76dc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/CategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/ProductRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/CategoryService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/ProductService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard/assets/demo/chart-area-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard/assets/demo/chart-bar-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard/assets/demo/chart-pie-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard/assets/demo/datatables-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard/assets/img/error-404-monochrome.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mainHome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/product/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/product/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +145,7 @@
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gUhQsbJXBKSnwjgkJwMk4zbC27" />
@@ -155,6 +181,7 @@
       <updated>1598175065685</updated>
       <workItem from="1598175066836" duration="4444000" />
       <workItem from="1598185778901" duration="3903000" />
+      <workItem from="1598230742322" duration="2366000" />
     </task>
     <servers />
   </component>
@@ -166,14 +193,18 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="597" y="320" width="716" height="412" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1046@0.0.1920.1046" timestamp="1598179087084" />
-    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl" timestamp="1598189904641">
+    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl" timestamp="1598230807556">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl/0.0.1920.1046@0.0.1920.1046" timestamp="1598189904641" />
-    <state x="755" y="445" width="399" height="161" key="NewPhpFileDialog" timestamp="1598179998501">
+    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl/0.0.1920.1046@0.0.1920.1046" timestamp="1598230807556" />
+    <state x="633" y="228" width="643" height="596" key="NewPhpClassDialog" timestamp="1598232585900">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="755" y="445" width="399" height="161" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1598179998501" />
+    <state x="633" y="228" width="643" height="596" key="NewPhpClassDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1598232585900" />
+    <state x="755" y="445" width="399" height="161" key="NewPhpFileDialog" timestamp="1598232486293">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="755" y="445" width="399" height="161" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1598232486293" />
     <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1598178827650">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
