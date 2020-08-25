@@ -13,14 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@mainHome')->name('home.mainHome');
-Route::get('/check', function () {
-    return view('checkout');
-});
+Route::get('/', 'ShopController@index')->name('shop.index');
+Route::get('/{id}/add-To-Cart', 'CartController@addToCart')->name('cart.addToCart');
+Route::get('/checkout','CartController@checkOut')->name('cart.checkout');
+Route::post('/checkout','CartController@placeOder')->name('cart.placeOder');
+Route::get('/{id}/view-product','ShopController@viewProduct')->name('shop.viewProduct');
+Route::get('/view-cart','CartController@index')->name('cart.viewCart');
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+
 
 Route::middleware('auth')->prefix('admin')->group(function (){
     Route::get('/','HomeController@index')->name('admin.home');
@@ -31,6 +31,10 @@ Route::middleware('auth')->prefix('admin')->group(function (){
         Route::get('/{id}/edit','ProductController@edit')->name('product.edit');
         Route::post('/{id}/update','ProductController@update')->name('product.update');
         Route::get('/{id}/delete','ProductController@delete')->name('product.delete');
+    });
+    Route::prefix('bill')->group(function (){
+        Route::get('/list','BillController@index')->name('bill.list');
+        Route::get('/{id}/view-detail','BillController@viewDetail')->name('bill.viewdetail');
     });
 });
 

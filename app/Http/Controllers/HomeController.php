@@ -29,9 +29,4 @@ class HomeController extends Controller
         return view('admin');
     }
 
-    public function mainHome()
-    {
-        $products = $this->productService->getAll();
-        return view('mainHome',compact('products'));
-    }
 }

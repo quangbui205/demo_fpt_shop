@@ -1,5 +1,6 @@
 @extends('admin.layouts.index');
 @section('title','FPT-SHOP')
+
 @section('content')
 
     <!-- SECTION -->
@@ -98,7 +99,7 @@
                                         </div>
                                         <div class="product-body">
                                             <p class="product-category">{{$product->category->name}}</p>
-                                            <h3 class="product-name"><a href="#">{{$product->name}}</a></h3>
+                                            <h3 class="product-name"><a href="{{route('shop.viewProduct',$product->id)}}">{{$product->name}}</a></h3>
                                             <h4 class="product-price"> {{$product->price}} VNĐ <del class="product-old-price"></del></h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
@@ -114,7 +115,8 @@
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                            <a href="{{route('cart.addToCart',$product->id)}}" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</a>
+
                                         </div>
                                     </div>
                                     <!-- /product -->

@@ -1163,6 +1163,7 @@ textarea.input {
 
 .products-slick .product.slick-slide {
   margin: 15px;
+    max-height: 550px;
 }
 
 .products-tabs>.tab-pane {
